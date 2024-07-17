@@ -1,0 +1,93 @@
+
+Gurobi 10.0.3 (win64, Python) logging started Tue Nov 28 18:25:02 2023
+
+Set parameter Username
+Set parameter LogFile to value "gurobi.log"
+Academic license - for non-commercial use only - expires 2024-11-27
+Read MPS format model from file up_10 - Copy.mps
+Reading time = 2.83 seconds
+matlab: 3009321 rows, 807441 columns, 5882553 nonzeros
+Gurobi Optimizer version 10.0.3 build v10.0.3rc0 (win64)
+
+CPU model: 13th Gen Intel(R) Core(TM) i5-13500, instruction set [SSE2|AVX|AVX2]
+Thread count: 14 physical cores, 20 logical processors, using up to 20 threads
+
+Optimize a model with 3009321 rows, 807441 columns and 5882553 nonzeros
+Model fingerprint: 0x7cec9247
+Variable types: 742737 continuous, 64704 integer (64704 binary)
+Coefficient statistics:
+  Matrix range     [1e-10, 1e+04]
+  Objective range  [1e+00, 1e+02]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e-04, 1e+04]
+Warning: Model contains large matrix coefficient range
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 2765853 rows and 539067 columns
+Presolve time: 0.97s
+
+Explored 0 nodes (0 simplex iterations) in 1.92 seconds (2.02 work units)
+Thread count was 1 (of 20 available processors)
+
+Solution count 0
+
+Model is infeasible or unbounded
+Best objective -, best bound -, gap -
+IIS computation: initial model status unknown, solving to determine model status
+Presolve removed 2765853 rows and 539067 columns
+Presolve time: 0.95s
+
+Explored 0 nodes (0 simplex iterations) in 2.15 seconds (2.02 work units)
+Thread count was 1 (of 20 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Computing Irreducible Inconsistent Subsystem (IIS)...
+
+           Constraints          |            Bounds           |  Runtime
+      Min       Max     Guess   |   Min       Max     Guess   |
+--------------------------------------------------------------------------
+        0   3009129         -         0         0         0           2s
+        0   3009129         -         0         0         0          16s
+        0   2708217         -         0         0         0          23s
+        0   2708217         -         0         0         0          38s
+        0   2708217         -         0         0         0          48s
+        0   2437396         -         0         0         0          50s
+        0   1776863         -         0         0         0          55s
+        0   1776863         -         0         0         0          61s
+        0   1599177        10         0         0         0          66s
+        0   1599177        10         0         0         0          71s
+        0   1165801        10         0         0         0          77s
+        0   1049221        10         0         0         0          82s
+        0   1049221        10         0         0         0          86s
+        0    849870        10         0         0         0          90s
+        0    764883        10         0         0         0          96s
+        0    688395        10         0         0         0         100s
+        0    451657        10         0         0         0         105s
+        0    216028        10         0         0         0         110s
+        0    157486         6         0         0         0         115s
+        0    103329         7         0         0         0         120s
+        0     67797         7         0         0         0         125s
+        0     29187         7         0         0         0         130s
+        0     15514         6         0         0         0         135s
+        0      8246         7         0         0         0         140s
+        0      4870         7         0         0         0         145s
+        0      2331         7         0         0         0         150s
+        0      1241         7         0         0         0         155s
+        0       735         7         0         0         0         160s
+        0       436         7         0         0         0         165s
+        0       288         7         0         0         0         170s
+        2       253         7         0         0         0         175s
+        4       136         7         0         0         0         180s
+        6        69         7         0         0         0         185s
+        6        45         7         0         0         0         190s
+        6        32         7         0         0         0         195s
+        8        21         8         0         0         0         200s
+        8         8         8         0         0         0         205s
+        8         8         8         0         0         0         206s
+
+IIS computed: 8 constraints, 0 bounds
+IIS runtime: 205.96 seconds (82.80 work units)

@@ -1,0 +1,22 @@
+\ Model matlab_copy
+\ LP format - for model browsing. Use MPS format to capture full model detail.
+Minimize
+ 
+Subject To
+ R378448: C5700 - 0.98 C6636 + 1.020408163265306 C8508 - C807418 = 0
+ R468700: C807418 = 0.6
+ R468739: C10012 = 0.25931
+ R854601: C5700 <= 0.6
+ R856473: - 0.3 C4764 + C6636 <= 0
+ R858345: - 0.3 C5076 + C8508 <= 0
+ R858913: - C6636 + C10012 <= 0.225
+ R2999577: C4764 + C5076 <= 1
+Bounds
+ C5700 free
+ C6636 free
+ C8508 free
+ C10012 free
+ C807418 free
+Binaries
+ C4764 C5076
+End
