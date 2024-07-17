@@ -15,7 +15,7 @@ q_es_dis_up = sdpvar(n_t_up, n_es, n_phase, 'full');
 p_es_ch_pre_up = sdpvar(1, n_es, n_phase, 'full');
 p_es_dis_pre_up = sdpvar(1, n_es, n_phase, 'full');
 
-%x_br_up = binvar(n_t_up, n_bra, 'full');
+% x_br_up = binvar(n_t_up, n_bra, 'full');
 x_br_up1 = binvar(n_t_up, n_bra, 'full');
 x_br_up  = ones(n_t_up, n_bra)-x_br_up1;
 %x_br_up = ones(n_t_up, n_bra);
@@ -75,8 +75,8 @@ for i = 1:n_bra
     Qft = [ q_f_up(:,i,1)'; q_f_up(:,i,2)'; q_f_up(:,i,3)' ];
 
     %con_up = con_up + [[ -M*(1-repmat(x_br_up(:,i)',3,1)) <= Vt2 - Vf2 + 2*(Requal*Pft + Xequal*Qft) <= M*(1-repmat(x_br_up(:,i)',3,1)) ]:'Dist'];
-  con_up = con_up + [[ Vt2 - Vf2 + 2*(Requal*Pft + Xequal*Qft) <= M*(1-repmat(x_br_up(:,i)',3,1)) ]:'Dist'];
-  con_up = con_up + [[ Vt2 - Vf2 + 2*(Requal*Pft + Xequal*Qft) >= -M*(repmat(x_br_up(:,i)',3,1)) ]:'Dist'];
+   con_up = con_up + [[ Vt2 - Vf2 + 2*(Requal*Pft + Xequal*Qft) <= M*(1-repmat(x_br_up(:,i)',3,1)) ]:'Dist'];
+   con_up = con_up + [[ Vt2 - Vf2 + 2*(Requal*Pft + Xequal*Qft) >= -M*(repmat(x_br_up(:,i)',3,1)) ]:'Dist'];
   % 
   % matrix_result = sum(value(Vt2 - Vf2 + 2 * (Requal * Pft + Xequal * Qft)));
   % if matrix_result<0
@@ -86,9 +86,6 @@ for i = 1:n_bra
   % end
 end
 
-% indices_satisfying_condition = find(satisfies_condition);
-% disp('支路满足条件的索引：');
-% disp(indices_satisfying_condition);
 
 % ================= energy storage
 % ======= SOC contraints

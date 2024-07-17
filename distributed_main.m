@@ -234,7 +234,7 @@ for t = 1:24
         new_table_dn = addvars(new_table_dn, trackingsteparray, 'NewVariableNames',{'TrackingStep'});
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%End Bodo
 
-        writetable(new_table_dn, 'result_dn_save.csv', 'WriteMode', 'overwrite');
+        %writetable(new_table_dn, 'result_dn_save.csv', 'WriteMode', 'overwrite');
 
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%Begin Bodo
         %Write data to modbus
@@ -383,7 +383,7 @@ filename_prefix_upper = 'result_up_save'; % used for saving CSV file
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%End Bodo
 
         %writetable(new_table_up_2, 'result_up_save.csv', 'WriteMode', 'overwrite');
-        writetable(groupData, 'result_up_save.csv', 'WriteMode', 'overwrite');
+        %writetable(groupData, 'result_up_save.csv', 'WriteMode', 'overwrite');
 
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%Begin Bodo
         %Write data to modbus

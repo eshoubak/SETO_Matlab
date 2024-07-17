@@ -1,0 +1,148 @@
+-----------====== MILP Formulating - Upper level ======----------------------
+-----------====== Simulation Start ======----------------------
+Time step:  1 || Status: Normal || Connection: Networked || Loss: 0.6971 (MWh) || Shedding: 0.0000 (MWh) || Solution: Optimal
+	 Tracking step:  1 || Tracking error: 0.000000 || MGs:  1 || Iters:   104 
+	 Tracking step:  2 || Tracking error: 0.000001 || MGs:  1 || Iters:   104 
+	 Tracking step:  3 || Tracking error: 0.000003 || MGs:  1 || Iters:   104 
+	 Tracking step:  4 || Tracking error: 0.000007 || MGs:  1 || Iters:   104 
+	 Critical alive hours: 1 
+ Time step:  2 || Status: Normal || Connection: Networked || Loss: 0.6987 (MWh) || Shedding: 0.0000 (MWh) || Solution: Optimal
+	 Tracking step:  1 || Tracking error: 0.000000 || MGs:  1 || Iters:   104 
+	 Tracking step:  2 || Tracking error: 0.000002 || MGs:  1 || Iters:   104 
+	 Tracking step:  3 || Tracking error: 0.000007 || MGs:  1 || Iters:   104 
+	 Tracking step:  4 || Tracking error: 0.000015 || MGs:  1 || Iters:   104 
+	 Critical alive hours: 2 
+ Time step:  3 || Status: Normal || Connection: Networked || Loss: 0.6998 (MWh) || Shedding: 0.0000 (MWh) || Solution: Optimal
+	 Tracking step:  1 || Tracking error: 0.000000 || MGs:  1 || Iters:   104 
+	 Tracking step:  2 || Tracking error: 0.000000 || MGs:  1 || Iters:   104 
+	 Tracking step:  3 || Tracking error: 0.000000 || MGs:  1 || Iters:   104 
+	 Tracking step:  4 || Tracking error: 0.000000 || MGs:  1 || Iters:   104 
+	 Critical alive hours: 3 
+ Time step:  4 || Status: Normal || Connection: Networked || Loss: 0.7006 (MWh) || Shedding: 0.0000 (MWh) || Solution: Optimal
+	 Tracking step:  1 || Tracking error: 0.000000 || MGs:  1 || Iters:   104 
+	 Tracking step:  2 || Tracking error: 0.000000 || MGs:  1 || Iters:   104 
+	 Tracking step:  3 || Tracking error: 0.000001 || MGs:  1 || Iters:   104 
+	 Tracking step:  4 || Tracking error: 0.000005 || MGs:  1 || Iters:   104 
+	 Critical alive hours: 4 
+ Time step:  5 || Status: Normal || Connection: Networked || Loss: 0.7013 (MWh) || Shedding: 0.0000 (MWh) || Solution: Optimal
+	 Tracking step:  1 || Tracking error: 0.000000 || MGs:  1 || Iters:   104 
+	 Tracking step:  2 || Tracking error: 0.000006 || MGs:  1 || Iters:   104 
+	 Tracking step:  3 || Tracking error: 0.000038 || MGs:  1 || Iters:   105 
+	 Tracking step:  4 || Tracking error: 0.000085 || MGs:  1 || Iters:   106 
+	 Critical alive hours: 5 
+ Time step:  6 || Status: Normal || Connection: Networked || Loss: 0.6998 (MWh) || Shedding: 0.0000 (MWh) || Solution: Optimal
+	 Tracking step:  1 || Tracking error: 0.000000 || MGs:  1 || Iters:   104 
+	 Tracking step:  2 || Tracking error: 0.000002 || MGs:  1 || Iters:   105 
+	 Tracking step:  3 || Tracking error: 0.000010 || MGs:  1 || Iters:   105 
+	 Tracking step:  4 || Tracking error: 0.000018 || MGs:  1 || Iters:   105 
+	 Critical alive hours: 6 
+ Time step:  7 || Status: Normal || Connection: Networked || Loss: 0.6990 (MWh) || Shedding: 0.0000 (MWh) || Solution: Optimal
+	 Tracking step:  1 || Tracking error: 0.000000 || MGs:  1 || Iters:   105 
+	 Tracking step:  2 || Tracking error: 0.000001 || MGs:  1 || Iters:   104 
+	 Tracking step:  3 || Tracking error: 0.000008 || MGs:  1 || Iters:   104 
+	 Tracking step:  4 || Tracking error: 0.000021 || MGs:  1 || Iters:   104 
+	 Critical alive hours: 7 
+ Time step:  8 || Status: Normal || Connection: Networked || Loss: 0.6943 (MWh) || Shedding: 0.0000 (MWh) || Solution: Optimal
+	 Tracking step:  1 || Tracking error: 0.000000 || MGs:  1 || Iters:   104 
+	 Tracking step:  2 || Tracking error: 0.000001 || MGs:  1 || Iters:   105 
+	 Tracking step:  3 || Tracking error: 0.000001 || MGs:  1 || Iters:   105 
+	 Tracking step:  4 || Tracking error: 0.000003 || MGs:  1 || Iters:   105 
+	 Critical alive hours: 8 
+ Time step:  9 || Status: Normal || Connection: Networked || Loss: 0.6917 (MWh) || Shedding: 0.0000 (MWh) || Solution: Optimal
+	 Tracking step:  1 || Tracking error: 0.000000 || MGs:  1 || Iters:   104 
+	 Tracking step:  2 || Tracking error: 0.000012 || MGs:  1 || Iters:   105 
+	 Tracking step:  3 || Tracking error: 0.000007 || MGs:  1 || Iters:   105 
+	 Tracking step:  4 || Tracking error: 0.000055 || MGs:  1 || Iters:   105 
+	 Critical alive hours: 9 
+ Time step: 10 || Status: Normal || Connection: Networked || Loss: 0.6893 (MWh) || Shedding: 0.0000 (MWh) || Solution: Optimal
+	 Tracking step:  1 || Tracking error: 0.000000 || MGs:  1 || Iters:   104 
+	 Tracking step:  2 || Tracking error: 0.000015 || MGs:  1 || Iters:   105 
+	 Tracking step:  3 || Tracking error: 0.000001 || MGs:  1 || Iters:   104 
+	 Tracking step:  4 || Tracking error: 0.000005 || MGs:  1 || Iters:   105 
+	 Critical alive hours: 10 
+ Time step: 11 || Status: Normal || Connection: Networked || Loss: 0.6858 (MWh) || Shedding: 0.0000 (MWh) || Solution: Optimal
+	 Tracking step:  1 || Tracking error: 0.000000 || MGs:  1 || Iters:   104 
+	 Tracking step:  2 || Tracking error: 0.000049 || MGs:  1 || Iters:   105 
+	 Tracking step:  3 || Tracking error: 0.000096 || MGs:  1 || Iters:   105 
+	 Tracking step:  4 || Tracking error: 0.000013 || MGs:  1 || Iters:   105 
+	 Critical alive hours: 11 
+ Time step: 12 || Status: Normal || Connection: Networked || Loss: 0.6828 (MWh) || Shedding: 0.0000 (MWh) || Solution: Optimal
+	 Tracking step:  1 || Tracking error: 0.000000 || MGs:  1 || Iters:   104 
+	 Tracking step:  2 || Tracking error: 0.000001 || MGs:  1 || Iters:   105 
+	 Tracking step:  3 || Tracking error: 0.000003 || MGs:  1 || Iters:   105 
+	 Tracking step:  4 || Tracking error: 0.000003 || MGs:  1 || Iters:   106 
+	 Critical alive hours: 12 
+ Time step: 13 || Status: Normal || Connection: Networked || Loss: 0.6797 (MWh) || Shedding: 0.0000 (MWh) || Solution: Optimal
+	 Tracking step:  1 || Tracking error: 0.000000 || MGs:  1 || Iters:   105 
+	 Tracking step:  2 || Tracking error: 0.000008 || MGs:  1 || Iters:   104 
+	 Tracking step:  3 || Tracking error: 0.000033 || MGs:  1 || Iters:   105 
+	 Tracking step:  4 || Tracking error: 0.000018 || MGs:  1 || Iters:   106 
+	 Critical alive hours: 13 
+ Time step: 14 || Status: Normal || Connection: Networked || Loss: 0.6773 (MWh) || Shedding: 0.0000 (MWh) || Solution: Optimal
+	 Tracking step:  1 || Tracking error: 0.000000 || MGs:  1 || Iters:   107 
+	 Tracking step:  2 || Tracking error: 0.000004 || MGs:  1 || Iters:   107 
+	 Tracking step:  3 || Tracking error: 0.000018 || MGs:  1 || Iters:   108 
+	 Tracking step:  4 || Tracking error: 0.000044 || MGs:  1 || Iters:   108 
+	 Critical alive hours: 14 
+ Time step: 15 || Status: Normal || Connection: Networked || Loss: 0.6765 (MWh) || Shedding: 0.0000 (MWh) || Solution: Optimal
+	 Tracking step:  1 || Tracking error: 0.000000 || MGs:  1 || Iters:   109 
+	 Tracking step:  2 || Tracking error: 0.000007 || MGs:  1 || Iters:   108 
+	 Tracking step:  3 || Tracking error: 0.000040 || MGs:  1 || Iters:   108 
+	 Tracking step:  4 || Tracking error: 0.000099 || MGs:  1 || Iters:   107 
+	 Critical alive hours: 15 
+ Time step: 16 || Status: Normal || Connection: Networked || Loss: 0.6758 (MWh) || Shedding: 0.0000 (MWh) || Solution: Optimal
+	 Tracking step:  1 || Tracking error: 0.000000 || MGs:  1 || Iters:   107 
+	 Tracking step:  2 || Tracking error: 0.000021 || MGs:  1 || Iters:   106 
+	 Tracking step:  3 || Tracking error: 0.000059 || MGs:  1 || Iters:   107 
+	 Tracking step:  4 || Tracking error: 0.000133 || MGs:  1 || Iters:   106 
+	 Critical alive hours: 16 
+ Time step: 17 || Status: Normal || Connection: Networked || Loss: 0.6768 (MWh) || Shedding: 0.0000 (MWh) || Solution: Optimal
+	 Tracking step:  1 || Tracking error: 0.000000 || MGs:  1 || Iters:   103 
+	 Tracking step:  2 || Tracking error: 0.000026 || MGs:  1 || Iters:   104 
+	 Tracking step:  3 || Tracking error: 0.000091 || MGs:  1 || Iters:   103 
+	 Tracking step:  4 || Tracking error: 0.000187 || MGs:  1 || Iters:   103 
+	 Critical alive hours: 17 
+ Time step: 18 || Status: Normal || Connection: Networked || Loss: 0.6796 (MWh) || Shedding: 0.0000 (MWh) || Solution: Optimal
+	 Tracking step:  1 || Tracking error: 0.000000 || MGs:  2 || Iters:   102 
+	 Tracking step:  2 || Tracking error: 0.000001 || MGs:  2 || Iters:   102 
+	 Tracking step:  3 || Tracking error: 0.000003 || MGs:  2 || Iters:   102 
+	 Tracking step:  4 || Tracking error: 0.000006 || MGs:  2 || Iters:   102 
+	 Critical alive hours: 18 
+ Time step: 19 || Status: Normal || Connection: Networked || Loss: 0.6866 (MWh) || Shedding: 0.0000 (MWh) || Solution: Optimal
+	 Tracking step:  1 || Tracking error: 0.000000 || MGs:  2 || Iters:   102 
+	 Tracking step:  2 || Tracking error: 0.000003 || MGs:  2 || Iters:   102 
+	 Tracking step:  3 || Tracking error: 0.000011 || MGs:  2 || Iters:   102 
+	 Tracking step:  4 || Tracking error: 0.000026 || MGs:  2 || Iters:   103 
+	 Critical alive hours: 19 
+ Time step: 20 || Status: Normal || Connection: Networked || Loss: 0.6931 (MWh) || Shedding: 0.0000 (MWh) || Solution: Optimal
+	 Tracking step:  1 || Tracking error: 0.000000 || MGs:  1 || Iters:   103 
+	 Tracking step:  2 || Tracking error: 0.000002 || MGs:  1 || Iters:   102 
+	 Tracking step:  3 || Tracking error: 0.000006 || MGs:  1 || Iters:   102 
+	 Tracking step:  4 || Tracking error: 0.000014 || MGs:  1 || Iters:   102 
+	 Critical alive hours: 20 
+ Time step: 21 || Status: Normal || Connection: Networked || Loss: 0.6997 (MWh) || Shedding: 0.0000 (MWh) || Solution: Optimal
+	 Tracking step:  1 || Tracking error: 0.000000 || MGs:  2 || Iters:   103 
+	 Tracking step:  2 || Tracking error: 0.000003 || MGs:  2 || Iters:   103 
+	 Tracking step:  3 || Tracking error: 0.000011 || MGs:  2 || Iters:   100 
+	 Tracking step:  4 || Tracking error: 0.000026 || MGs:  2 || Iters:   100 
+	 Critical alive hours: 21 
+ Time step: 22 || Status: Normal || Connection: Networked || Loss: 0.7056 (MWh) || Shedding: 0.0000 (MWh) || Solution: Optimal
+	 Tracking step:  1 || Tracking error: 0.000000 || MGs:  2 || Iters:   103 
+	 Tracking step:  2 || Tracking error: 0.000006 || MGs:  2 || Iters:   104 
+	 Tracking step:  3 || Tracking error: 0.000026 || MGs:  2 || Iters:   100 
+	 Tracking step:  4 || Tracking error: 0.000058 || MGs:  2 || Iters:   101 
+	 Critical alive hours: 22 
+ Time step: 23 || Status: Normal || Connection: Networked || Loss: 0.7107 (MWh) || Shedding: 0.0000 (MWh) || Solution: Optimal
+	 Tracking step:  1 || Tracking error: 0.000000 || MGs:  1 || Iters:   104 
+	 Tracking step:  2 || Tracking error: 0.000035 || MGs:  1 || Iters:   103 
+	 Tracking step:  3 || Tracking error: 0.000139 || MGs:  1 || Iters:   103 
+	 Tracking step:  4 || Tracking error: 0.000316 || MGs:  1 || Iters:   103 
+	 Critical alive hours: 23 
+ Time step: 24 || Status: Normal || Connection: Networked || Loss: 0.7139 (MWh) || Shedding: 0.0000 (MWh) || Solution: Optimal
+	 Tracking step:  1 || Tracking error: 0.000000 || MGs:  1 || Iters:   104 
+	 Tracking step:  2 || Tracking error: 0.000006 || MGs:  1 || Iters:   102 
+	 Tracking step:  3 || Tracking error: 0.000026 || MGs:  1 || Iters:   102 
+	 Tracking step:  4 || Tracking error: 0.000058 || MGs:  1 || Iters:   102 
+	 Critical alive hours: 24 
+ 	 Runtime: 700.9131s
+>> 

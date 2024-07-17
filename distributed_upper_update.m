@@ -14,7 +14,7 @@ else % emergency condition
     con_up_update = con_up_update + [[ p_load_up(:,index_load_noncurtail,:) == LOAD.p_up(period_up,index_load_noncurtail,:) ]:'p_load_noncurtail'];
     con_up_update = con_up_update + [[ q_load_up(:,index_load_noncurtail,:) == LOAD.q_up(period_up,index_load_noncurtail,:) ]:'q_load_noncurtail'];
 
-    con_up_update = con_up_update + [[ 0<= p_load_up(:,index_load_curtail,:) <= LOAD.p_up(period_up,index_load_curtail,:) ]:'p_load_curtail'];
+    con_up_update = con_up_update + [[ 0 < p_load_up(:,index_load_curtail,:) <= LOAD.p_up(period_up,index_load_curtail,:) ]:'p_load_curtail'];
     if value(LOAD.q_up(period_up,index_load_curtail,:))>=0
     con_up_update = con_up_update + [[ 0 <= q_load_up(:,index_load_curtail,:) <= LOAD.q_up(period_up,index_load_curtail,:) ]:'q_load_curtail'];
     else
@@ -82,7 +82,7 @@ obj_up = obj_normal*x_s(1) - obj_emergency*(1-x_s(1));
 
 % ================================= final model
 cons_up = [ con_up, con_up_update ];
-options_up = sdpsettings('verbose',1, 'solver','gurobi');
+options_up = sdpsettings('verbose',0, 'solver','gurobi');
 
 if x_s(1) == 1 % 0: emergency;  1: normalcy
     options_up.gurobi.mipgap = 0.5/100;
@@ -90,10 +90,8 @@ else
     options_up.gurobi.mipgap = 0.5/100;
 end
 options_up.gurobi.FeasibilityTol = 1e-8; % accuracy of constraint violations
-sol_up = optimize(cons_up, obj_up, options_up)
+sol_up = optimize(cons_up, obj_up, options_up);
 
 %%
 %[model, ~] = export(cons_up, obj_up, sdpsettings('solver', 'gurobi'));
 %gurobi_write(model, ['up_',num2str(t),'.mps'])
-
-
