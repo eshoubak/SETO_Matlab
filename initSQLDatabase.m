@@ -29,11 +29,7 @@ function [conn,sqltableup,sqltabledn,sqltableall] = initSQLDatabase()
             pause(1)
         end
     end
-    %Check if database is available
-    %status = testConnection(opts,username,password);11
-    %saveAsDataSource(opts)
-    %Connect to database
-    %conn = postgresql(datasource,username,password)
+
     %%initizialize tables
     %table names
     sqltableup = "result_up";
