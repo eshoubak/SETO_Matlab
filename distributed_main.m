@@ -234,6 +234,7 @@ for t = 1:24
         new_table_dn = addvars(new_table_dn, trackingsteparray, 'NewVariableNames',{'TrackingStep'});
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%End Bodo
 
+        %Write data to CSV file | Comment out for now because we are now using matlab to send data over modbus
         %writetable(new_table_dn, 'result_dn_save.csv', 'WriteMode', 'overwrite');
 
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%Begin Bodo
@@ -382,6 +383,7 @@ filename_prefix_upper = 'result_up_save'; % used for saving CSV file
         groupData = addvars(groupData, timesteparray, 'NewVariableNames',{'TimeStep'});
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%End Bodo
 
+        %Write data to CSV file | Comment out for now because we are now using matlab to send data over modbus
         %writetable(new_table_up_2, 'result_up_save.csv', 'WriteMode', 'overwrite');
         %writetable(groupData, 'result_up_save.csv', 'WriteMode', 'overwrite');
 
@@ -433,7 +435,7 @@ filename_prefix_upper = 'result_up_save'; % used for saving CSV file
             writeDataToModbusServer(modbusWriteTable, portNumbers);
 
             disp(['Data from Time Step ', num2str(t), ' Tracking Step ', num2str(i), ' successfully written to SQL database and Modbus server']);
-            pause(1);
+            pause(100);
 
         end
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%End Bodo
