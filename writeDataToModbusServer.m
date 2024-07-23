@@ -32,6 +32,7 @@ function writeDataToModbusServer(DataArray, portNumbers)
                 
                 % Create Modbus object
                 modbusObj = modbus('tcpip', server_ip_address, server_port);
+                modbusObj.WordOrder = 'little-endian';
                 %disp('Successfully created Modbus object')
                 
                 % Get data from table

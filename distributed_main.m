@@ -235,7 +235,7 @@ for t = 1:24
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%End Bodo
 
         %Write data to CSV file | Comment out for now because we are now using matlab to send data over modbus
-        %writetable(new_table_dn, 'result_dn_save.csv', 'WriteMode', 'overwrite');
+        writetable(new_table_dn, 'result_dn_save.csv', 'WriteMode', 'overwrite');
 
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%Begin Bodo
         %Write data to modbus
@@ -385,7 +385,7 @@ filename_prefix_upper = 'result_up_save'; % used for saving CSV file
 
         %Write data to CSV file | Comment out for now because we are now using matlab to send data over modbus
         %writetable(new_table_up_2, 'result_up_save.csv', 'WriteMode', 'overwrite');
-        %writetable(groupData, 'result_up_save.csv', 'WriteMode', 'overwrite');
+        writetable(groupData, 'result_up_save.csv', 'WriteMode', 'overwrite');
 
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%Begin Bodo
         %Write data to modbus
@@ -400,6 +400,8 @@ filename_prefix_upper = 'result_up_save'; % used for saving CSV file
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%Begin Bodo
 
         for i = 1:length(dn_save)
+            start_time = tic;
+            disp(['Start writing data from Time Step ', num2str(t), ' Tracking Step ', num2str(i), ' to SQL database and Modbus server']);
             modbusWriteTable = table();
             modbusWriteTable.BusNumber = sqlwritetable.BusNumber;
             modbusWriteTable.Type = sqlwritetable.Type;
@@ -433,12 +435,16 @@ filename_prefix_upper = 'result_up_save'; % used for saving CSV file
             %Write data to modbus
             %portNumbers = initModbusConnection(size(modbusWriteTable ,1));
             writeDataToModbusServer(modbusWriteTable, portNumbers);
-
-            disp(['Data from Time Step ', num2str(t), ' Tracking Step ', num2str(i), ' successfully written to SQL database and Modbus server']);
-            pause(100);
+            
+            time_elapsed = toc(start_time);
+            disp(['Data from Time Step ', num2str(t), ' Tracking Step ', num2str(i), ' successfully written to SQL database and Modbus server.']);
+            disp(['The operation took: ', num2str(time_elapsed), ' seconds']);
+            setModbusReadFlag();
+            %pause(100);
 
         end
-        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%End Bodo
+    disp('Communication ended successfully. Continue with computation...');
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%End Bodo
 
      %%  
 end

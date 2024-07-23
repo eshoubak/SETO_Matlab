@@ -14,7 +14,7 @@ else % emergency condition
     con_up_update = con_up_update + [[ p_load_up(:,index_load_noncurtail,:) == LOAD.p_up(period_up,index_load_noncurtail,:) ]:'p_load_noncurtail'];
     con_up_update = con_up_update + [[ q_load_up(:,index_load_noncurtail,:) == LOAD.q_up(period_up,index_load_noncurtail,:) ]:'q_load_noncurtail'];
 
-    con_up_update = con_up_update + [[ 0 < p_load_up(:,index_load_curtail,:) <= LOAD.p_up(period_up,index_load_curtail,:) ]:'p_load_curtail'];
+    con_up_update = con_up_update + [[ 0 <= p_load_up(:,index_load_curtail,:) <= LOAD.p_up(period_up,index_load_curtail,:) ]:'p_load_curtail'];
     if value(LOAD.q_up(period_up,index_load_curtail,:))>=0
     con_up_update = con_up_update + [[ 0 <= q_load_up(:,index_load_curtail,:) <= LOAD.q_up(period_up,index_load_curtail,:) ]:'q_load_curtail'];
     else
