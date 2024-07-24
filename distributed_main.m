@@ -235,7 +235,7 @@ for t = 1:24
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%End Bodo
 
         %Write data to CSV file | Comment out for now because we are now using matlab to send data over modbus
-        writetable(new_table_dn, 'result_dn_save.csv', 'WriteMode', 'overwrite');
+        %writetable(new_table_dn, 'result_dn_save.csv', 'WriteMode', 'overwrite');
 
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%Begin Bodo
         %Write data to modbus
@@ -385,7 +385,7 @@ filename_prefix_upper = 'result_up_save'; % used for saving CSV file
 
         %Write data to CSV file | Comment out for now because we are now using matlab to send data over modbus
         %writetable(new_table_up_2, 'result_up_save.csv', 'WriteMode', 'overwrite');
-        writetable(groupData, 'result_up_save.csv', 'WriteMode', 'overwrite');
+        %writetable(groupData, 'result_up_save.csv', 'WriteMode', 'overwrite');
 
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%Begin Bodo
         %Write data to modbus
