@@ -14,12 +14,12 @@ function writeDataToModbusServer(DataArray, portNumbers)
     server_ip_address = '192.168.0.224';
 
     % Server ports
-    serverPortsList = portNumbers.';
+    serverPortsList = portNumbers;
     %disp(['Successfully loaded server ports: ']);  %, num2str(serverPortsList)]);
 
     % Load data from CSV
     modbusData = DataArray;
-    %disp('Successfully loaded data from input')
+    disp('Successfully loaded data from input')
 
     success = false;
 
@@ -27,13 +27,15 @@ function writeDataToModbusServer(DataArray, portNumbers)
         try
             % Loop over server ports
             for i = 1:length(serverPortsList)
-                %disp('Successfully started loop over server ports')
+                disp('Successfully started loop over server ports')
                 server_port = serverPortsList(i);
+                disp('123')
                 
                 % Create Modbus object
                 modbusObj = modbus('tcpip', server_ip_address, server_port);
-                .WordOrder = 'little-endian';
-                %disp('Successfully created Modbus object')
+                disp('456')
+                modbusObj.WordOrder = 'little-endian';
+                disp('Successfully created Modbus object')
                 
                 % Get data from table
                 derID= modbusData{i, 'BusNumber'};
@@ -61,7 +63,7 @@ function writeDataToModbusServer(DataArray, portNumbers)
                 P3_soc_kwh = modbusData{i, 'P3_soc_kwh'};
                 timeStep = modbusData{i, 'TimeStep'};
                 trackingStep = modbusData{i, 'TrackingStep'};
-                %disp('Successfully fetched data from table')
+                disp('Successfully fetched data from table')
 
                 % Write data to Modbus server
                 %write(modbusObj, 'holdingregs', 40001, 0); %Flag for data exchange
@@ -115,13 +117,13 @@ function writeDataToModbusServer(DataArray, portNumbers)
                 %disp(['Successfully sent time step [= ', num2str(timeStep), ']'])
                 write(modbusObj, 'holdingregs', 40047, trackingStep, 'int16'); %Register number 40046
                 %disp(['Successfully sent tracking step [= ', num2str(trackingStep), ']'])
-                %disp(['Successfully sent all data to Modbus server ', num2str(server_ip_address), ' on port ', num2str(server_port)])
+                disp(['Successfully sent all data to Modbus server ', num2str(server_ip_address), ' on port ', num2str(server_port)])
                 
                 % Close Modbus connection
                 %fclose(modbusObj);
             end
 
-            %disp('Successfully sent all data to Modbus server');
+            disp('Successfully sent all data to Modbus server');
 
             success = true;
 

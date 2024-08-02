@@ -14,7 +14,7 @@ function writeDataToModbusServer(DataArray, portNumbers)
     server_ip_address = '192.168.0.224';
 
     % Server ports
-    serverPortsList = portNumbers.';
+    serverPortsList = portNumbers;
     %disp(['Successfully loaded server ports: ']);  %, num2str(serverPortsList)]);
 
     % Load data from CSV
