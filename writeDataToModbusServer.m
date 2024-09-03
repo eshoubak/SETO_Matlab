@@ -64,7 +64,6 @@ function writeDataToModbusServer(DataArray, portNumbers)
                 %disp('Successfully fetched data from table')
 
                 % Write data to Modbus server
-                %write(modbusObj, 'holdingregs', 40001, 0); %Flag for data exchange
                 write(modbusObj, 'holdingregs', 40002, derID); %Register number 40001 in Modbus
                 %disp(['Successfully sent BUS NUMBER [= ', num2str(derID), ']'])
                 write(modbusObj, 'holdingregs', 40003, derType); %Register number 40002
@@ -115,7 +114,7 @@ function writeDataToModbusServer(DataArray, portNumbers)
                 %disp(['Successfully sent time step [= ', num2str(timeStep), ']'])
                 write(modbusObj, 'holdingregs', 40047, trackingStep, 'int16'); %Register number 40046
                 %disp(['Successfully sent tracking step [= ', num2str(trackingStep), ']'])
-                %disp(['Successfully sent all data to Modbus server ', num2str(server_ip_address), ' on port ', num2str(server_port)])
+                disp(['Successfully sent all data to Modbus server ', num2str(server_ip_address), ' on port ', num2str(server_port)])
                 
                 % Close Modbus connection
                 %fclose(modbusObj);

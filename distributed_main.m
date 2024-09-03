@@ -429,6 +429,8 @@ filename_prefix_upper = 'result_up_save'; % used for saving CSV file
             modbusWriteTable.P2_soc_act_kwh = sqlwritetable.P2_soc_act_kwh;
             modbusWriteTable.P3_soc_act_kwh = sqlwritetable.P3_soc_act_kwh;
 
+            disp(varfun(@class, modbusWriteTable, 'OutputFormat', 'cell'));
+
             %Write data to sql database
             sqlwrite(conn, sqltableall, modbusWriteTable);
             
